@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takehome exercise</title>
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    <main id="main-content" class="usa-form">
+      <h1>Create account</h1>
+
+      <form action="/create-account" class="signup__form" method="POST">
+        <label for="account_email">Email</label>
+        <input id="account_email" type="email" name="email" required>
+
+        <label for="account_password">Password</label>
+        <input id="account_password" type="password" name="password" required>
+        <p class="usa-form-note">8+ characters</p>
+
+        <button class="signup__submit usa-button-big" type="submit">
+          Create account
+        </button>
+      </form>
+    </main>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/create-account.js"></script>
+  </body>
+</html>
